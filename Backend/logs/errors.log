@@ -1,0 +1,193 @@
+error: Apr-29-2024 10:55:42: 	Cannot read properties of undefined (reading 'body')
+error: Apr-29-2024 11:19:11: 	"image" is required
+error: Apr-29-2024 11:20:04: 	req is not defined
+error: Apr-29-2024 11:20:04: 	ReferenceError: req is not defined
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:7:3
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/multer/lib/make-middleware.js:45:7)
+    at indicateDone (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/multer/lib/make-middleware.js:49:68)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/multer/lib/make-middleware.js:155:11
+error: Apr-29-2024 11:20:47: 	bcrypt is not defined
+error: Apr-29-2024 11:20:47: 	ReferenceError: bcrypt is not defined
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:5:25
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:11:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/multer/lib/make-middleware.js:45:7)
+error: Apr-29-2024 11:21:39: 	Users.save is not a function
+error: Apr-29-2024 11:21:39: 	TypeError: Users.save is not a function
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:13:32
+error: Apr-29-2024 11:21:58: 	(Unauthorized) not authorized on local to execute command { insert: "users", documents: [[{name pradeep} {image 1714369916177_Screenshot_from_2024-04-19_17-29-10.png} {phone_number 9898159522} {email pradeep@yopmail.com} {password $2b$15$QS4D32vqxwaM/JCMClGzAO9YT8o.GpAlo2doChv5g9hxL.JAl4pGu} {is_delete false} {isActive true} {_id ObjectID("662f357ed863ff8b831b6e17")} {createdAt 1714369918573} {updatedAt 1714369918573} {__v 0}]], ordered: true, lsid: { id: {4 [200 191 49 9 11 143 77 123 157 90 163 154 211 38 176 222]} }, txnNumber: 1.000000, $clusterTime: { clusterTime: {1714369912 16}, signature: { hash: {0 [25 118 225 118 230 227 226 151 176 119 177 97 100 220 169 150 70 162 19 209]}, keyId: 7297855064670994432.000000 } }, $db: "local" }
+error: Apr-29-2024 11:21:58: 	MongoServerError: (Unauthorized) not authorized on local to execute command { insert: "users", documents: [[{name pradeep} {image 1714369916177_Screenshot_from_2024-04-19_17-29-10.png} {phone_number 9898159522} {email pradeep@yopmail.com} {password $2b$15$QS4D32vqxwaM/JCMClGzAO9YT8o.GpAlo2doChv5g9hxL.JAl4pGu} {is_delete false} {isActive true} {_id ObjectID("662f357ed863ff8b831b6e17")} {createdAt 1714369918573} {updatedAt 1714369918573} {__v 0}]], ordered: true, lsid: { id: {4 [200 191 49 9 11 143 77 123 157 90 163 154 211 38 176 222]} }, txnNumber: 1.000000, $clusterTime: { clusterTime: {1714369912 16}, signature: { hash: {0 [25 118 225 118 230 227 226 151 176 119 177 97 100 220 169 150 70 162 19 209]}, keyId: 7297855064670994432.000000 } }, $db: "local" }
+    at Connection.sendCommand (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongodb/lib/cmap/connection.js:281:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Connection.command (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongodb/lib/cmap/connection.js:304:26)
+    at async Server.command (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongodb/lib/sdam/server.js:169:24)
+    at async InsertOneOperation.execute (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongodb/lib/operations/insert.js:46:21)
+    at async executeOperation (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongodb/lib/operations/execute_operation.js:126:16)
+error: Apr-29-2024 11:37:35: 	err is not defined
+error: Apr-29-2024 11:37:35: 	ReferenceError: err is not defined
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:17:13
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+error: Apr-29-2024 11:41:07: 	Operation `users.insertOne()` buffering timed out after 10000ms
+error: Apr-29-2024 11:41:07: 	MongooseError: Operation `users.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:185:23)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+error: Apr-29-2024 12:10:21: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:10:21: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:20:47)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:19:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:12:15: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:12:15: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:20:47)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:19:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:12:47: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:12:47: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:20:53)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:19:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:13:22: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:13:22: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:20:53)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:19:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:15:18: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:15:18: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:21:53)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:19:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:16:33: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:16:33: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:21:53)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:20:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:17:36: 	Cannot read properties of undefined (reading 'email')
+error: Apr-29-2024 12:17:36: 	TypeError: Cannot read properties of undefined (reading 'email')
+    at userLoginService (/home/webbrains/Desktop/Projects/BoilerPlate/Node/src/services/users/userAuth.service.js:21:53)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:20:22
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:9:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+error: Apr-29-2024 12:20:06: 	user_not_found
+error: Apr-29-2024 12:21:58: 	invalid_credential
+error: Apr-29-2024 14:35:49: 	ReferenceError: userLoginServicess is not defined
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:20:16
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/index.js:284:15
+error: Apr-29-2024 14:36:46: 	ReferenceError: userLoginServicess is not defined
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/controller/user/userAuth.controller.js:20:16
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/src/middleware/validator.js:7:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/webbrains/Desktop/Projects/BoilerPlate/Node/node_modules/express/lib/router/index.js:284:15
+error: Jul-08-2024 21:35:47: 	"role" is not allowed
+error: Jul-08-2024 21:38:26: 	"role" is not allowed
+error: Jul-08-2024 22:02:22: 	User already exists, please log in
+error: Jul-08-2024 22:44:35: 	User already exists, please log in
+error: Jul-08-2024 22:44:52: 	User not found, please sign up first
+error: Jul-08-2024 22:47:30: 	data is not defined
+error: Jul-08-2024 22:47:30: 	ReferenceError: data is not defined
+    at userLoginService (/home/webbrains/Desktop/Projects/TechErudite/Backend/src/services/users/userAuth.service.js:19:63)
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/controller/user/userAuth.controller.js:18:22
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/TechErudite/Backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/TechErudite/Backend/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/middleware/comman.js:25:5
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+error: Jul-08-2024 22:50:37: 	req is not defined
+error: Jul-08-2024 22:50:37: 	ReferenceError: req is not defined
+    at userLoginService (/home/webbrains/Desktop/Projects/TechErudite/Backend/src/services/users/userAuth.service.js:19:63)
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/controller/user/userAuth.controller.js:18:22
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/helper/tryCatch.js:8:5
+    at Layer.handle [as handle_request] (/home/webbrains/Desktop/Projects/TechErudite/Backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/webbrains/Desktop/Projects/TechErudite/Backend/node_modules/express/lib/router/route.js:149:13)
+    at /home/webbrains/Desktop/Projects/TechErudite/Backend/src/middleware/comman.js:26:5
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+error: Jul-08-2024 22:51:51: 	data is not defined
+error: Jul-08-2024 22:51:51: 	ReferenceError: data is not defined
+    at userLoginService (/home/webbrains/Desktop/Projects/TechErudite/Backend/src/services/users/userAuth.service.js:21:36)
+    at async /home/webbrains/Desktop/Projects/TechErudite/Backend/src/controller/user/userAuth.controller.js:18:16
+error: Jul-08-2024 22:52:06: 	data is not defined
+error: Jul-08-2024 22:52:06: 	ReferenceError: data is not defined
+    at userLoginService (/home/webbrains/Desktop/Projects/TechErudite/Backend/src/services/users/userAuth.service.js:21:36)
+    at async /home/webbrains/Desktop/Projects/TechErudite/Backend/src/controller/user/userAuth.controller.js:18:16
+error: Jul-09-2024 12:36:18: 	Invalid login credentials
+error: Jul-09-2024 12:36:58: 	Invalid login credentials
+error: Jul-09-2024 12:38:01: 	Invalid login credentials
+error: Jul-09-2024 12:46:31: 	User not found, please sign up first
+error: Jul-09-2024 12:46:47: 	Invalid login credentials
+error: Jul-09-2024 12:58:12: 	You are not allowed to login from here
+error: Jul-09-2024 14:37:21: 	You are not allowed to login from here
+error: Jul-09-2024 14:37:42: 	You are not allowed to login from here
